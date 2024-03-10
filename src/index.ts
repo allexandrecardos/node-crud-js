@@ -1,12 +1,10 @@
 //import packages
-require('dotenv').config();
-const express = require('express');
-
-const tutorialRoutes = require('./src/routes/tutorial.routes');
+import express from 'express'
+import { server } from './config/config';
+import { tutorialRoutes } from './routes/TutorialRoutes';
 
 const app = express();
-
-const PORT = process.env.PORT; 
+const PORT = server.PORT_APP;
 
 //parse application/json
 app.use(express.json());

@@ -1,7 +1,8 @@
-const express = require("express");
-const router = express.Router();
+import Router from "express";
+import TutorialController from '../controllers/TutorialController';
+const router = Router();
 
-const tutorialController = require("../controllers/tutorial.controller");
+const tutorialController = new TutorialController();
 
 router.get("/", tutorialController.getAllTutorial);
 router.get("/:id", tutorialController.getTutorialById);
@@ -9,4 +10,4 @@ router.post("/", tutorialController.createTutorial);
 router.put("/:id", tutorialController.updateTutorial);
 router.delete("/:id", tutorialController.deleteTutorial);
 
-module.exports = router;
+export { router as tutorialRoutes };
