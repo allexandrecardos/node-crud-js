@@ -2,11 +2,12 @@
 
 ## Melhorias
 
-- [ ] Sequelize-cli (models e migrations)
-- [ ] Docker (Mysql) [ Atualmente é PostgreSql ]
+- [ ] ~~Sequelize-cli (models e migrations)~~
+- [X] Prisma (models e migrations)
+- [X] Docker (Mysql) [ Atualmente é PostgreSql ]
 - [ ] Jest (testes automatizados)
 - [ ] Finalizar documentação (README.md)
-- [ ] TypesScript e ESmodules
+- [X] TypesScript e ESmodules
 
 # API de CRUD de Tutoriais 📝
 
@@ -16,7 +17,8 @@ Esta é uma API RESTful para gerenciamento de tutoriais. Ela foi construída uti
 A estrutura de pastas da API é organizada da seguinte maneira:
 
 - **controllers**: Controladores da API responsáveis por lidar com as requisições HTTP.
-- **models**: Modelos da aplicação que definem a estrutura dos dados no banco de dados.
+- ~~**models**: Modelos da aplicação que definem a estrutura dos dados no banco de dados.~~
+- **repository**: Repositório da aplicação responsável por interagir com o banco de dados.
 - **services**: Serviços da aplicação que contêm a lógica de negócios.
 - **routes**: Rotas da API definidas utilizando o Express.js.
 
@@ -25,17 +27,18 @@ A estrutura de pastas da API é organizada da seguinte maneira:
 | Tecnologia  | Versão      |
 |-------------|-------------|
 | NodeJS      |   20.3.1    | 
+| TypeScript      |   ^5.4.2   | 
 
 ## Bibliotecas Utilizadas
 
 | Biblioteca  | Versão      |
 |-------------|-------------|
+| ~~Sequelize~~   |  ~~^6.36.0~~    | 
+| ~~Pg~~          |  ~~^8.11.3~~    |
+| ~~Yup~~         |  ~~^1.3.3~~     | 
 | Express     |  ^4.18.2    | 
-| Sequelize   |  ^6.36.0    | 
-| Yup         |  ^1.3.3     | 
 | Dotenv      |  ^16.4.1    | 
-| Pg          |  ^8.11.3    |
-
+| Prisma          |  ^^5.10.2    |
 
 ## Funcionalidades
 
