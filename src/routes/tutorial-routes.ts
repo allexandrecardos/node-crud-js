@@ -1,5 +1,5 @@
 import Router from "express";
-import TutorialController from '../controllers/TutorialController';
+import TutorialController from '../controllers/tutorial-controller';
 const router = Router();
 
 const tutorialController = new TutorialController();
